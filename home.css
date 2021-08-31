@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	height: 100vh;
+	width: 100%;
+	background-image: url('b.jpg');
+	background-position: center;
+	background-size: cover;
+	padding-left: 0%;
+	padding-right: 0%;
+	box-sizing: border-box;
+	position: relative;
+  align-content: center;
+  justify-content: center;
+}
+
+body {
+  font-family: 'Besley', serif;
+  font-size: 50px;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 45px;
+  color: #FCF9C9; ;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+nav {
+    background-color: #ffffcc;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    color: #888;
+    display: block;
+    margin: 8px 22px 8px 22px;
+    overflow: hidden;
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+}
+
+.content h1{
+	font-size: 50px;
+	font-weight: 100;
+	margin-top: 24px;
+	margin-bottom: 15px;
+	color: #232d60;
+}
+.content p{
+	font-size: 20px;
+	color: 6a7199;
+}
+.content {
+	margin-left: 10%;
+	margin-top: 10%;
+}
+.content .btn{
+  display: inline-block;
+  background: linear-gradient(45deg, #87adfe, #ff77cd);
+  border-radius: 6px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+}
+.feature-img{
+  height: 75%;
+  position: absolute;
+  bottom: 0;
+  right: 160px;
+  margin-bottom: 6px;
+  border-bottom: 15px;
+}

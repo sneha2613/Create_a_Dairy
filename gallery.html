@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="jquery.flipster.min.css">
+	<title>Your Gallery</title>
+	<style type="text/css">
+		.hero{
+			width: 100%;
+			height: 100vh;
+			background: white;
+			overflow: hidden;
+		}
+		.hero .carousel{
+		width: 100%;
+		height: 100vh;
+		background-color: black;
+		/*background-image: url('pink.jpg');
+		overflow: visible;
+		background-size: cover;*/
+
+		}
+	</style>
+</head>
+<body>
+	<div class="hero">
+		<div class="carousel">
+			<ul>
+				<li><a href="g1.jpeg"></a><img src="g1.jpeg"></li>
+				<li><a href="g2.jpeg"></a><img src="g2.jpeg"></li>
+				<li><a href="g3.jpeg"><img src="g3.jpeg"></li>
+				<li><a href="g4.jpeg"><img src="g4.jpeg"></li>
+				<li><a href="g11.jpeg"><img src="g11.jpeg"></li>
+				<li><a href="g6.jpeg"><img src="g6.jpeg"></li>
+				<li><a href="g7.jpeg"><img src="g7.jpeg"></li>
+				<li><a href="g10.jpeg"><img src="g10.jpeg"></li>
+				<li><a href="gi.jpg"><img src="gi.jpg"></a></li>
+				<li><a href="gd.jpg"><img src="gd.jpg"></a></li>
+				<li><a href="pp.jpg"><img src="pp.jpg"></a></li>
+				<li><a href="gf.jpg"><img src="gf.jpg"></a></li>
+				<li><a href="u.jpg"><img src="u.jpg"></a></li>
+			</ul>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="jquery.flipster.min.js"></script>
+	<script>
+    $('.carousel').flipster({
+    	style: 'carousel',
+    	spacing: -0.3,
+    });
+</script
+</body>
+</html>
